@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif,Georgia,"Times New Roman","Microsoft YaHei","΢���ź�",STXihei,"��Ϊϸ��",serif;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h2>丽江</h2>
+<p>1.火车站在城南，昆明过来的下火车坐公交<em>4路</em>、<em>18路公交</em> （2元/ 人）到古城南门</p>
+<p>2.束河古镇（缩小版的大研古镇） 白沙古镇（类似10年前的大研古镇） 据说 束河古镇每天早上7点前和下午5点后进出入不收门票。</p>
+<p>3.古城维护费：80元/人  玉龙雪山  束河古镇 要查证（我要去淘宝找找看有没有卖的，啥信息都没有）</p>
+<p>4.住宿可以选择古城外的新城里，便宜好多，古城200多（古城逛到夜里10点到11点的样子，可以走到新城去住宿哦），古城住宿早上别人退租是去问问，一般难砍价，旺季</p>
+<p>5.古城的服饰纪念品要在古城小巷里的批发商店买。</p>
+<p>6.玉龙雪山：</p>
+<pre><code>      去玉龙雪山：大水车附近做7路公交、15块直接到大索道站。
+      索道：大索道 110元/人         门票+索道 240元/人   景区通票190元/人（可以看玉水潭、玉峰寺）
+      散客需要交105元进山费、80元古城维护费（买过就不用了） 
+      推荐：跟团啊，这个散客太贵了，单人花的冤枉钱太多了，不值得
+</code></pre>
+
+<p>7.美食：</p>
+<pre><code>   丽江古城四方街小吃一条街。
+   丽江粑粑、鸡豆凉粉、纳西炒饭、烤野猪蹄、纳西烤鱼、本地三文鱼、米灌肠、煎豆浆豆腐、丽江酸梅汤、纳西腊排骨（60/斤）
+   不要在古城里的餐馆吃饭，太贵了。
+</code></pre>
+
+<h2>丽江→泸沽湖</h2>
+<pre><code>路线：
+1.客运站汽车，早上9点出发，中途不停车，到泸沽湖大落水下车，100元/人。 4-5小时
+2.旅游专车 
+  丽江古城的各大城门来接，沿途可以停下来拍照，推荐哦。
+ 单程100元/人 往返180/人   联系方式：13013380856 ，提前两天预定。
+</code></pre>
+
+<h2>大理</h2>
+<p>下关风，上关花，苍山雪，洱海月</p>
+<ol>
+<li>火车站位于大理下关</li>
+</ol>
+<p>火车站广场边坐<em>8路</em>公交，做到<em>终点站古城西门</em>下。（5毛钱一个人，准备零钱。）</p>
+<p>2.大理古城住宿：西门外有好多白族家庭客栈，100多左右（可以砍价）</p>
+<p>3.天龙八部城 门票50元</p>
+<p>4.苍山索道130单程，门票+索道全程 340/人 有活动的便宜点</p>
+<p>5.洱海 起单车逛 大理古城租20/天 或者 摩拜</p>
+<p>6.双廊 </p>
+<p>大理客运北站 去双廊的中巴 18块/人 </p>
+<p>7.大理美食：黄焖鸡 野山菌 山珍  大理喜洲的喜洲粑粑</p>
+<h2>昆明</h2>
+<p>市中心：金马碧鸡坊、正义路、南屏步行街一带。 晚上摆摊夜市。</p>
+<p>1.景点：</p>
+<p>石林和九乡 ，石林门票175/人 +25/人 电瓶车  （捆绑的，没办法）</p>
+<p>滇池：公交41、44、73路 到海埂公园（到了河尾村转171到终点即可到滇池大坝。）骑单车更爽哦。
+       顺便看看云南名俗村
+2.美食：</p>
+<p>桥香园和建新园 的过桥米线  推荐肥牛过桥米线和状元过桥米线
+  汽锅鸡
+  鲜花饼
+  关上路烧烤街 南屏步行街</p>
+<p>3.花：
+  尚义街的花市</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
